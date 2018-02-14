@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Recept:Pizzataart</title>
+		<<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style>
+		#recept {
+	  background-color: blue;
+	  text-align: center
+		}	
+
+	.rowtwo {
+		  background-color: green
+		}
+
+		img {
+		  width: 100%
+		}
+
+		a{
+		 color: black
+		}
+
+		a:hover {
+			color: black;
+			text-decoration: overline
+		}
+
+		a:visited {
+			display:none
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="row">
+			<div class="col-12" id="recept"><h1>Recept</h1></div>
+		  </div>
+		  <div class="row">
+			<div class="col-12 col-md-3 rowtwo">
+			  <h3>Menu</h3>
+			  <ul>
+				  <li><a href="">Nothing here</a></li>
+				  <li><a href="">Nope</a></li>
+				  <li><a href="www.google.com">Google!</a></li>
+			  </ul>
+			</div>
+			<div class="col-12 col-md-6 rowtwo"> 
+			  <h1>Pizzataart</h1>
+			  <p>HAPJE – 12 PORTIES – 10 MIN. + 20 MIN. OVENTIJD <br>
+			  Pizzabodems beleggen
+			  Verwarm de oven voor op 200 °C.Snijd de mozzarella in blokjes. Verdeel de pestospread en mozzarella over 2 bodems en neem ook de randen mee. Verdeel de geraspte kaas en plakjes salami over de 2 andere bodems. Neem bij 1 van de bodems ook de randen mee. Bestrooi de andere bodem met de oregano.
+			  Pizza’s stapelen
+			  Leg een van de pizza’s met mozzarella op een met bakpapier beklede bakplaat en stapel om en om met de andere pizza’s. Eindig met de pizza met de oregano.
+			  Afbakken en garneren
+			  Bak de pizzataart in 20 min. goudbruin en gaar. Neem na 15 min. uit de oven, verdeel de tomaten erover en bak nog 5 min.Neem de pizzataart uit de oven enbestrooi met de rucola. Serveer direct. </p>
+			  <img src="pizzapie.jpg" title="Pizzataart!!" alt="Pizza taart">
+			</div>
+			<div class="col-12 col-md-3 rowtwo">
+			  <h3>INGREDIËNTEN</h3> <br>
+			  250 g mozzarella
+			  90 g pestospread (bakje, koelvers)
+			  4 pizzabodems tomaat (pak 2 stuks)
+			  150 g geraspte kaas voor pizza
+			  8 plakken goudsalami (pak 85 g) 
+			  1 tl gedroogde oregano
+			  8 cherrytomaten (bakje)
+			  1 handje rucola (zak 40 g)
+			</div>
+		  </div>
+		</div>
+	</body>
+</html>

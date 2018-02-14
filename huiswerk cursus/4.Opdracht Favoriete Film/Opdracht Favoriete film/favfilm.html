@@ -1,0 +1,68 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Mijn favoriete film</title>
+			<link rel="stylesheet" type="text/css" href="main.css">
+			<script src="jquery-3.2.1.js"></script>
+			<script src="bootstrap.min.js"></script>
+			<script type="text/javascript">
+				$(function() {
+						$('.pop').on('click', function() {
+							$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+							$('#imagemodal').modal('show');   
+						});		
+				});
+			</script>
+		</head>
+		<body>
+			<div class="container">
+				<a href="#" class="pop">
+					<img id="imageresource" src="noordelingen.jpg">
+					Click to Enlarge
+				</a>
+				
+				<div class="modal fade" id="imagemodal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h4 class="modal-title" id="myModalLabel">Image preview</h4>
+							</div>
+							<div class="modal-body">
+								<img src="noordelingen.jpg" class="imagepreview" alt="filmposter van de film de noordelingen">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12"><p>De Noordelingen (1992) is een zwarte komedie geschreven en geregisseerd door <a href="https://nl.wikipedia.org/wiki/Alex_van_Warmerdam">Alex van Warmerdam</a><a href="alexwarmerdam.jfif">(foto)</a>.<br>
+					Het speelt zich af in een eenzame nieuwbouwwijk in de jaren zestig <br>
+					en is een droeve satire op het burgerlijke keurslijf dat zo kenmerkend is voor deze tijd.</p></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p>Een clip:</p>
+						<video width="400px" controls>
+							<source src="noorderlingen.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="col-md-6">
+					Acteurs: 
+					<ul>
+						<li>Jack Wouterse (Jacob, de slager)</li>
+						<li>Annette Malherbe (Martha, vrouw van de slager)</li>
+						<li>Leonard Lucieer (zoon van de slager)</li>
+						<li>Alex van Warmerdam (postbode Simon)</li>
+						<li>Theo van Gogh (fat Willy)</li>
+					</ul>
+				</div>
+			</div>
+		</body>
+	</html>

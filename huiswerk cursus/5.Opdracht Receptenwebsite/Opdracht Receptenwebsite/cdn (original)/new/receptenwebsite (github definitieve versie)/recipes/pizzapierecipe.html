@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Recept: Pizzataart</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<link rel="stylesheet" href="../recipe.css">
+	</head>
+	<body>
+		<div class="container-fluid" >
+		  <div class="row d-print-none">
+				<div class="col-12" id="recept"><h1>Receptenwebsite.nl</h1></div>
+		  </div>
+		  
+			<div class="row">
+				<div class="col-12 col-md-3 rowtwo d-print-none">
+				  <h3 id="menu">Menu</h3>
+				  <ul id="list">
+					  <li><a href="../index.htm">Home</a>
+						<ul>
+							<li><a href="">Recepten</li>
+							<li><a href="">Ingrediënten Van Het Leven</a>
+						</ul>
+					  </li>
+					  <li><a href="">Contact</a></li>
+					  <li><a href="">Partners</a>
+						<ul>
+							<li><a href="">Blogs</li>
+						</ul>
+					  </li>
+				  </ul>
+				  <br>
+				  <br>
+				  <a href="../gifs/facebook.gif"><i class="fa fa-facebook"></i></a>
+				  <a href="../gifs/twitter.gif"><i class="fa fa-twitter"></i></a>
+				  <a href="../gifs/vine.gif"><i class="fa fa-vine"></i></a>
+				</div>
+				
+				<div class="col-12 col-md-6 rowtwo">
+					<ul class="breadcrumb d-print-none">
+					  <li><a href="../index.htm">Home</a></li>
+					  <br>
+					  <li><a href="#">Recepten</a></li>
+					  <br>
+					  <li>Pizzataart</li>
+					</ul>
+				  	<h1>Pizzataart</h1>
+					<p>HAPJE – 12 PORTIES – 10 MIN. + 20 MIN. OVENTIJD</p>
+				  	<p><strong>Pizzabodems beleggen</strong><br>
+				  	Verwarm de oven voor op 200 °C. Snijd de mozzarella in blokjes. 
+				  	Verdeel de pestospread en mozzarella over 2 bodems en neem ook de randen mee. Verdeel de geraspte kaas en plakjes salami over de 2 andere bodems.<br> 
+				  	Neem bij 1 van de bodems ook de randen mee. 
+					Bestrooi de andere bodem met de oregano.</p>
+				  	<p><strong>Pizza’s stapelen</strong><br>
+				  	Leg een van de pizza’s met mozzarella op een met bakpapier beklede bakplaat en stapel om en om met de andere pizza’s.<br>
+					Eindig met de pizza met de oregano.</p>
+				  	<strong>Afbakken en garneren</strong><br>
+				  	Bak de pizzataart in 20 min. goudbruin en gaar. Neem na 15 min. uit de oven, verdeel de tomaten erover en bak nog 5 min.<br>
+				 	Neem de pizzataart uit de oven en bestrooi met de rucola.<br> 
+				  	Serveer direct. </p>
+					<img src="images/pizzapie.jpg" title="Het eindresultaat!" alt="Een voltooide pizzataart">
+					<br>
+					<br>
+					<button class="btn btn-warning d-print-none" onclick="myFunction()">Print recept</button>
+					<button class= "btn btn-send d-print-none" data-toggle="modal" data-target="#foodModal">
+					Stuur recept door
+					</button>
+					<div class="modal fade" id="foodModal">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Stuur smakelijke dingen door!</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body " >
+									<form>
+										<div class="form-group">
+											<label for="afnamer">Naam afzender</label>
+											<input type="text" name="send_name" placeholder="Uw naam..." id="afnamer" class="form-control" required>
+										</div>
+										<div class="form-group">
+											<label for="toname">Naam ontvanger</label>
+											<input type="text" name="to_name" placeholder="Naam ontvanger..." id="toname" class="form-control" required>
+										</div>
+										<div class="form group">
+											<label for="emailto">E-mail ontvanger</label>
+											<input type="email" name="email_togo" placeholder="johannadeeg@voorbeeld.com" id="emailto" class="form-control" required>
+										</div>
+										<div class="form group">
+											<label for="messagemepls">Bericht</label>
+											<textarea maxlength="1500" name="beg4message" placeholder="Het bijbehorende bericht..." id="messagemepls" class="form-control" required></textarea>
+										</div>
+										<br>
+										<input type="submit" class="btn btn-info" value="Recept verzenden">
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<form class="d-print-none">
+						<h5 class="d-print-none">Reageer</h5>
+						<div class="form-group">
+							<label for="Nomenomen">Naam</label>
+							<input type="text" name="name" placeholder="Naam..." id="Nomenomen" class="form-control" required>
+						</div>
+						<label class="custom-control custom-radio">
+							<input type="radio" name="gender" value="female">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Vrouw</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input type="radio" name="gender" value="male"> 
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Man</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input type="radio" name="gender" value="other">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Overige</span>
+						</label>
+						<div class="form-group">
+							<label for="johnnymail">E-mail</label>
+							<input type="email" name="email" placeholder="johannesdeeg@voorbeeld.com" id="johnnymail" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="actionreaction">Reactie</label>
+							<textarea maxlength="750" for="Reactie" placeholder="Plaats hier uw reactie..." id="actionreaction" class="form-control" required></textarea>
+						</div>
+							<input type="submit" class="btn btn-success" value="Plaats Reactie">
+					</form>
+				</div>
+				
+				<div class="col-12 col-md-3 rowtwo">
+				  <h3>INGREDIËNTEN</h3> <br>
+					<ul>
+						<li>250 g mozzarella</li>
+						<li>90 g pestospread (bakje, koelvers)</li>
+						<li>4 pizzabodems tomaat (pak 2 stuks)</li>
+						<li>150 g geraspte kaas voor pizza</li>
+						<li>8 plakken goudsalami<br> (pak 85 g)</li> 
+						<li>1 tl gedroogde oregano</li>
+						<li>8 cherrytomaten (bakje)</li>
+						<li>1 handje rucola<br> (zak 40 g)</li>
+					</ul>
+					
+					<div id="foodCarousel" class="carousel slide d-print-none" data-ride="carousel">
+					  <ul class="carousel-indicators">
+						<li data-target="#foodCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#foodCarousel" data-slide-to="1"></li>
+						<li data-target="#foodCarousel" data-slide-to="2"></li>
+					  </ul>
+
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img src="images/lasagna.jpg" alt="Lasagna">
+						  <div class="carousel-caption">
+							<h3>Lasagna</h3>
+							<p>Probeer deze heerlijke lasagna eens!</p>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <img src="images/vegaburger.jpg" alt="Vegaburger">
+						  <div class="carousel-caption">
+						  <h3>Vegaburger</h3>
+						  <p>Vlees verbleekt bij dit ultieme veggiegerecht!</p>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <img src="images/oreochcake.jpg" alt="Oreo cheesecake">
+						  <div class="carousel-caption">
+						  <h3>Oreo Cheesecake</h3>
+						  <p>Een goddelijke combinatie van taart en oreo's...</p>
+						  </div>
+						</div>
+					  </div>
+
+					  <a class="carousel-control-prev" href="#foodCarousel" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#foodCarousel" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+					</div>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+		</div>
+		<script>
+		function myFunction(){
+			window.print();
+		}
+		
+		//script for scrollbar
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+			{
+				document.getElementById("topBtn").style.display = "block";
+			} else {
+				document.getElementById("topBtn").style.display = "none";
+			}	
+		}
+		
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		</script>
+	</body>
+</html>

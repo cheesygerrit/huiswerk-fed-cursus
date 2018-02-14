@@ -1,0 +1,26 @@
+ul {
+	padding:	0;
+	margin:		10; 
+	background: #DC143C;
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 500px;
+}
+
+li {
+	display: inline;
+	border-right: 1px solid white	
+}
+
+a {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	display: inline;
+	color: #000000;
+	font-size: 20px;
+}
+
+a:hover{
+	background-color: #FFFF00;
+}
